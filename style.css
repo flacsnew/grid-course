@@ -10,15 +10,8 @@
 
 .grid{
     display: grid;
-    grid-template-columns: 150px 150px 150px 150px;
+    /*grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 100px 100px 100px;*/
+    grid-template: repeat(3, 100px) / repeat(4, 150px);
     grid-gap: 20px;
-    grid-auto-rows: minmax(50px, auto);
-    /* start end center stretch */
-    justify-items: start;
-    align-items: center;
-}
-
-.grid > div:nth-child(6){
-    align-self: center;
-    justify-self: end;
 }
